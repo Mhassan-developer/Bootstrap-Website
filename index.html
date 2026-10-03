@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Travelling Website</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="position-sticky top-0 start-0" id="nav-container" style="z-index: 1000; background-image: url(Assets/nav-bg.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+  <nav class="navbar navbar-expand-lg navbar bg-transparent" style="backdrop-filter: blur(12px); height: 80px;">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" href="#">Time Travel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-4">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#choose-your-era">Choose Era</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#pre-historic-era">Past</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#present-era">Present</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#future-era">Future</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="height: calc(100vh - 80px);">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" style="height: 100%;">
+    <div class="carousel-item active" data-bs-interval="5000" style="height: 100%;">
+      <img src="Assets/carousel-2.jpg" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Different Eras</h2>
+        <p>Move to different Eras and know how the life was there</p>
+      </div>
+    </div>
+    <div class="carousel-item"  data-bs-interval="5000" style="height: 100%;">
+      <img src="Assets/carousel-1.webp" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+       <h2>Awesome Feeling</h2>
+        <p>Feel like that you have travelled to a different Era</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000" style="height: 100%;">
+      <img src="Assets/carousel-3.webp" class="d-block w-100" alt="..." style="height: 100%; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Infinity Experience</h2>
+        <p>Experinece alot of things about the past life and coming life</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div id="choose-your-era" style="height: 100vh; background: linear-gradient(to bottom, rgb(15, 15, 121)0%, yellow 50%, rgb(156, 70, 142) 100%);">
+  <h1 class="display-1 text-center text-light">Choose Your Era</h1>
+<div id="cards-era" class="d-flex justify-content-around mt-5">
+  <div class="card" style="width: 18rem; background-color: rgb(227, 204, 129);">
+  <img src="Assets/pre-historic.avif" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">The Dinosaur Era (Pre-historic)</h5>
+    <p class="card-text">Travel to the era where dinosaurs lived around 5000000 years ago</p>
+    <a href="#"><button type="button" class="btn btn-outline-danger">Go to this Era</button></a>
+  </div>
+</div>
+ <div class="card bg-success" style="width: 18rem;">
+  <img src="Assets/present.avif" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title text-light">The Present Era</h5>
+    <p class="card-text text-light">See what is happening now and enjoy  the present</p>
+    <a href="#"><button type="button" class="btn btn-light">Go to this Era</button></a>
+  </div>
+</div>
+<div class="card" style="width: 18rem; background-color: rgb(154, 75, 219);">
+  <img src="Assets/future.avif" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title text-light">The Future Era</h5>
+    <p class="card-text text-light">See what will happen in the future and enjoy the futuristic world</p>
+    <a href="#"><button type="button" class="btn btn-warning">Go to this Era</button></a>
+  </div>
+</div>
+</div>
+</div>
+<div id="pre-historic-era" style="background-image: url(Assets/pre-historic-bg.jpg); background-size: cover; height: 100vh;" class="text-center">
+  <h1 class="text-warning-emphasis">Pre Historic Era</h1>
+  <p class="fs-5 text" style="margin-top: 60px;">Welcome to the era which existed 65 million years ago. Explore the dinosaurs here and see how they were iin sense of looks</p>
+  <h1 class="text-warning-emphasis mt-5">Meet some amazing peoples (Dinosaurs)</h1>
+  <div id="cards-container" class="d-flex justify-content-around mt-2">
+    <div class="card" style="width: 18rem;">
+  <img src="Assets/t-rex.jpg" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">T-Rex</h5>
+    <p class="card-text">T-Rex was a large, meat-eating dinosaur that lived about 66–68 million years ago. It had powerful jaws, sharp teeth, and tiny arms.</p>
+  </div>
+</div>
+ <div class="card" style="width: 18rem;">
+  <img src="Assets/t-rex.jpg" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">T-Rex</h5>
+    <p class="card-text">T-Rex was a large, meat-eating dinosaur that lived about 66–68 million years ago. It had powerful jaws, sharp teeth, and tiny arms.</p>
+  </div>
+</div>
+ <div class="card" style="width: 18rem;">
+  <img src="Assets/t-rex.jpg" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">T-Rex</h5>
+    <p class="card-text">T-Rex was a large, meat-eating dinosaur that lived about 66–68 million years ago. It had powerful jaws, sharp teeth, and tiny arms.</p>
+  </div>
+</div>
+  </div>
+</div>
+<div id="present-era" style="background-image: url(Assets/present-bg.jpg); background-size: cover; height: 100vh;" class="text-center">
+  <h1 class="text-light">Present Era</h1>
+  <p class="fs-5 text text-light">Welcome to the present era in which you are living and enjoying your life</p>
+  <h1 class="text-light mt-5">Meet some amazing peoples</h1>
+  <div id="cards-container" class="d-flex justify-content-around mt-2">
+    <div class="card" style="width: 18rem;">
+  <img src="Assets/t-rex.jpg" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">T-Rex</h5>
+    <p class="card-text">T-Rex was a large, meat-eating dinosaur that lived about 66–68 million years ago. It had powerful jaws, sharp teeth, and tiny arms.</p>
+  </div>
+</div>
+ <div class="card" style="width: 18rem;">
+  <img src="Assets/t-rex.jpg" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">T-Rex</h5>
+    <p class="card-text">T-Rex was a large, meat-eating dinosaur that lived about 66–68 million years ago. It had powerful jaws, sharp teeth, and tiny arms.</p>
+  </div>
+</div>
+ <div class="card" style="width: 18rem;">
+  <img src="Assets/t-rex.jpg" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">T-Rex</h5>
+    <p class="card-text">T-Rex was a large, meat-eating dinosaur that lived about 66–68 million years ago. It had powerful jaws, sharp teeth, and tiny arms.</p>
+  </div>
+</div>
+  </div>
+</div>
+<div id="future-era" style="background-image: url(Assets/future-bg.jpg); background-size: cover; height: 100vh;" class="text-center">
+  <h1 class="text-light">Future Era</h1>
+  <p class="fs-5 text mt-4 text-light">Welcome to future Era which is an era of ai and robots</p>
+  <h1 class="mt-5 text-light">Meet some amazing peoples (Robots)</h1>
+  <div id="cards-container" class="d-flex justify-content-around mt-2">
+    <div class="card" style="width: 18rem;">
+  <img src="Assets/t-rex.jpg" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">T-Rex</h5>
+    <p class="card-text">T-Rex was a large, meat-eating dinosaur that lived about 66–68 million years ago. It had powerful jaws, sharp teeth, and tiny arms.</p>
+  </div>
+</div>
+ <div class="card" style="width: 18rem;">
+  <img src="Assets/t-rex.jpg" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">T-Rex</h5>
+    <p class="card-text">T-Rex was a large, meat-eating dinosaur that lived about 66–68 million years ago. It had powerful jaws, sharp teeth, and tiny arms.</p>
+  </div>
+</div>
+ <div class="card" style="width: 18rem;">
+  <img src="Assets/t-rex.jpg" class="card-img-top" alt="..." style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">T-Rex</h5>
+    <p class="card-text">T-Rex was a large, meat-eating dinosaur that lived about 66–68 million years ago. It had powerful jaws, sharp teeth, and tiny arms.</p>
+  </div>
+</div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
